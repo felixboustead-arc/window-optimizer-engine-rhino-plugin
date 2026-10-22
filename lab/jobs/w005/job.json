@@ -1,0 +1,67 @@
+{
+ "kind": "scan",
+ "core_dir": ".",
+ "params": {
+  "scene_path": "out/scene.json",
+  "epw_path": "SYNTHETIC_TEST_ONLY.epw",
+  "overrides": {
+   "facing_deg": 0.0,
+   "beam_width_m": 0.05,
+   "w_motion": 0.0,
+   "monthly_target_c": [
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5,
+    22.5
+   ],
+   "comfort_tolerance_c": 2.5,
+   "beam_priority": 1.0,
+   "time_step_min": 1.0,
+   "smooth_minutes": 25.0,
+   "break_up_every_s": 5.0,
+   "optimizer": "consistency",
+   "beam_score_model": "v2",
+   "drop_minutes": 60.0,
+   "jump_minutes_per_m": 2.0,
+   "break_up_max_share": 0.05,
+   "thermal_on": false,
+   "building": {
+    "below_ground_m": 0.0,
+    "fireplace_w": 0.0,
+    "g_value": 0.7,
+    "heat_recovery": 0.0,
+    "heating_days": 9.0,
+    "mass_kj_m2k": 165.0,
+    "n_rest": 5.0,
+    "n_system": 0.0,
+    "occupants": 4.0,
+    "r_obstruction": 0.8,
+    "r_sun_protection": {
+     "1": 0.2,
+     "10": 0.5,
+     "7": 0.6
+    },
+    "roof_absorptivity": 0.4,
+    "roof_reduction": 0.5,
+    "slab_on_ground": true,
+    "u_door": 2.0,
+    "u_floor": 0.85,
+    "u_glazing": 0.9,
+    "u_roof": 0.18,
+    "u_wall": 0.44,
+    "u_wall_earth": 0.44,
+    "w_per_person": 80.0
+   }
+  },
+  "out_dir": "lab/out",
+  "cache_dir": "out/_cache"
+ }
+}
